@@ -2,8 +2,12 @@ The code for paper Synthetic EMG Based on Adversarial Style Transfer Can Effecti
 
 Dataset: http://zju-capg.org/research_en_electro_capgmyo.html 
 
-training_xxx: train the cycleGAN or baseline id models
+Please dowload the data from original author.
 
-model_xxx: the model structure of one type of baseline models
+training_xxx: train the cycleGAN or baseline id models.
 
-You may need to dowload the baseline models from original author
+model_xxx: the model structure of one type of baseline models.
+
+We can only provide a demo model structure for baseline models.
+
+Please dowload the baseline models from original author.
