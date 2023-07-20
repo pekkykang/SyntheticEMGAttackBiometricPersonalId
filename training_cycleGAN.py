@@ -1,45 +1,16 @@
-
 import argparse
-import os
-import numpy as np
-import math
 import itertools
-import datetime
-import time
-import torchvision.transforms as transforms
-from torchvision.utils import save_image, make_grid
-from torch.utils.data import DataLoader
-from torchvision import datasets
-from torch.autograd import Variable
-from cycleGAN_dependence import *
-import torch.nn as nn
-import torch.nn.functional as F
-import torch
-from Tool_Pretreatment import *
-from sklearn.model_selection import train_test_split
-from Tool_Pretreatment import *
-from sklearn import preprocessing
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import recall_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import confusion_matrix
-from Tool_Visualization import *
-from sklearn.preprocessing import LabelEncoder
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import torch.utils.data as Data
-from torch.autograd import Variable
-from Tool_init import *
-import numpy as np
-import argparse
 
+import numpy as np
 import pandas as pd
-import csv
-import codecs
-from Tool_HEMG_visualization import *
+import torch
+import torch.utils.data as Data
+from sklearn.model_selection import train_test_split
+from torch.autograd import Variable
+from torchvision.utils import make_grid
+
+from cycleGAN_dependence import *
+
 
 def segment_2D(n_width, n_update, input_data, num_axis):
     data = []
