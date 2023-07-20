@@ -1,3 +1,6 @@
+"""We reused lots of code from https://github.com/eriklindernoren/PyTorch-GAN/tree/master"""
+
+
 import torch.nn as nn
 import torch.nn.functional as F
 import torch
