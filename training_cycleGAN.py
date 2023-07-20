@@ -1,3 +1,5 @@
+"""We reused lots of code from https://github.com/eriklindernoren/PyTorch-GAN/tree/master"""
+
 import argparse
 import itertools
 
