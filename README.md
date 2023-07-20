@@ -11,3 +11,5 @@ model_xxx: the model structure of one type of baseline models.
 We can only provide a demo model structure for baseline models.
 
 Please dowload the baseline models from original author.
+
+We reused lots of code from https://github.com/eriklindernoren/PyTorch-GAN/tree/master
