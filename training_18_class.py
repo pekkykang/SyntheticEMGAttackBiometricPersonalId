@@ -109,7 +109,7 @@ for gesture in gesture_list:
     test_y = torch.from_numpy(label_subject_test).to(torch.float32).cuda()
 
 
-    model = model_18.model_18()
+    model = model_18.Net_18()
     print("Model initialized")
     model.cuda()  
     torch.save(model, 'please use your model path')
