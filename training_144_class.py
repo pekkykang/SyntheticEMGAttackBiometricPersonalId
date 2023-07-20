@@ -37,12 +37,12 @@ def select_data(subject, gesture, trial, axis, path):
                 data = np.array(data)
     return data
 
-subject_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-gesture_list = [1, 2, 3, 4, 5, 6, 7, 8]
+subject_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] #'please rewrite the data process part according to your data naming logic'
+gesture_list = [1, 2, 3, 4, 5, 6, 7, 8] #'please rewrite the data process part according to your data naming logic'
 
-trial_all_list = [1,2,3,4,5,6,7,8,9,10]
-path_n = './H-EMG-N/'  # normalized data
-labels_name = [str(i) for i in range(1, 145)]
+trial_all_list = [1,2,3,4,5,6,7,8,9,10] #'please rewrite the data process part according to your data naming logic'
+path_n = './H-EMG-N/'  # normalized data 
+labels_name = [str(i) for i in range(1, 145)] #'please rewrite the data process part according to your data naming logic'
 num_classes = int(8*18)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 emg_num = 128
@@ -128,8 +128,6 @@ for trial in trial_all_list:
         avg_valid_loss = 0.0
         avg_valid_acc = 0.0
         for step, (b_x, b_y) in enumerate(train_loader):  # gives batch data, normalize x when iterate train_loader
-
-
 
             b_x = b_x.to(device)
             b_y = b_y.to(device)
